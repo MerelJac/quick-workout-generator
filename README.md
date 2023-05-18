@@ -13,3 +13,4 @@ WHEN I get a new exercise, the button now says, "Next Exercise?"
 THEN I click the next button, and am prompted with the next exercise printed to the page. This continues up to 10 total exercises.  
 
 ## Link for Deployment
+https://mereljac.github.io/quick-workout-generator/

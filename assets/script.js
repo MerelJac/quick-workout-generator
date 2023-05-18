@@ -11,7 +11,7 @@ var workoutMaxLength = 10;
 
 // insert function printExercise
 
-var printExercise = function() {
+var printExercises = function() {
     var exerciseList = [];
     for (var i = 0; i < workoutMaxLength; i++) {
     var pickRandom = exercises[Math.floor(Math.random() * exercises.length)];
@@ -25,4 +25,4 @@ var printExercise = function() {
 
 // activate function with event listener
 
-startWorkoutBtn.addEventListener("click", printExercise);
+startWorkoutBtn.addEventListener("click", printExercises);
