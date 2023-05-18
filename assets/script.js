@@ -1,5 +1,6 @@
 // link button to HTML
 var startWorkoutBtn = document.querySelector("#get-started-btn");
+
 startWorkoutBtn.addEventListener("click", function() {console.log("Hi!")});
 
 // insert variables
@@ -9,11 +10,17 @@ var exercises = ['Push-Ups','Pull-Ups','Sit Ups','Plank','Squats','Deadlifts','R
 var workoutMaxLength = 10;
 
 // insert function printExercise
+
 var printExercise = function() {
-    var randomize = Math.floor(Math.random() * exercises.length);
-    // var newExercise = exercises[randomize];
-    console.log(randomize);
-}
+    var exerciseList = [];
+    for (var i = 0; i < workoutMaxLength; i++) {
+    var pickRandom = exercises[Math.floor(Math.random() * exercises.length)];
+    console.log(pickRandom);
+    exerciseList.push(pickRandom);
+    document.querySelector('section').innerHTML = exerciseList;
+    }
+    // next: separate variables AND prevent duplicates. 
+}   
 
 
 // activate function with event listener
