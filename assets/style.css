@@ -2,24 +2,36 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+}
+
 .card {
-    margin: 20px;
-    padding: 20px;
+    /* margin: 20px;
+    padding: 20px; */
     text-align: center;
     color: black;
 }
 #get-started-btn {
-    padding: 10px;
+    /* padding: 10px; */
     color: black;
     background: pink;
     
 }
 
 #printed-exercises-section {
-    margin: 10px;
+    /* margin: 10px;
     padding: 20px;
-    width: 100%;
-    line-height: 2;
+    width: 100%; */
+    line-height: 1;
     text-align: center;
     justify-content: center;
 }
